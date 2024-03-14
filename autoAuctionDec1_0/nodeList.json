@@ -1,0 +1,103 @@
+[
+    {
+        "id" : "56827406-03a3-4248-95b7-0190cac18728",
+        "name" : "autoAuction",
+        "type" : "application/vnd.sas.business.rule.set",
+        "versionId" : "e4579fe8-e295-4e66-9eff-767bf1e78215",
+        "versionName" : "1.0",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "a597dd16-d983-4093-940d-87ebc4af1c39",
+                "name" : "autoAuctionDec",
+                "versionId" : "6bf0186e-ace5-413c-a372-db2ad193a6ab"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    },
+    {
+        "id" : "37a5cd6a-0bc5-4428-9605-c8a4d999da4e",
+        "name" : "autoAuctionMake",
+        "type" : "application/vnd.sas.business.rule.set",
+        "versionId" : "589180ef-bc42-4014-af61-62cbb53084ba",
+        "versionName" : "1.0",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "a597dd16-d983-4093-940d-87ebc4af1c39",
+                "name" : "autoAuctionDec",
+                "versionId" : "6bf0186e-ace5-413c-a372-db2ad193a6ab"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    },
+    {
+        "id" : "79b2b9dd-07a5-4474-a596-47d294e7870a",
+        "name" : "bidCommands",
+        "type" : "application/vnd.sas.business.rule.lookup",
+        "versionId" : "66321bce-9810-443a-820d-f46897728295",
+        "versionName" : "1.0",
+        "activeVersionReference" : true,
+        "referencingDecisions" : [
+            {
+                "id" : "a597dd16-d983-4093-940d-87ebc4af1c39",
+                "name" : "autoAuctionDec",
+                "versionId" : "6bf0186e-ace5-413c-a372-db2ad193a6ab"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    },
+    {
+        "id" : "c04b388d-d787-4278-81d3-32dfc140149d",
+        "name" : "unwantedMakes",
+        "type" : "application/vnd.sas.business.rule.lookup",
+        "versionId" : "3282f0cc-66cf-40f9-8de7-c19a13d69b03",
+        "versionName" : "1.0",
+        "activeVersionReference" : true,
+        "referencingDecisions" : [
+            {
+                "id" : "a597dd16-d983-4093-940d-87ebc4af1c39",
+                "name" : "autoAuctionDec",
+                "versionId" : "6bf0186e-ace5-413c-a372-db2ad193a6ab"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    },
+    {
+        "id" : "9497fcc0-ad32-41a2-8e47-a2f1767d9851",
+        "name" : "californiaOverride",
+        "type" : "application/vnd.sas.decision.code.file",
+        "versionId" : "5f6872f8-1121-44f2-994a-19311ff8bf87",
+        "versionName" : "1.0",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "a597dd16-d983-4093-940d-87ebc4af1c39",
+                "name" : "autoAuctionDec",
+                "versionId" : "6bf0186e-ace5-413c-a372-db2ad193a6ab"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    },
+    {
+        "id" : "c04ebb2d-94e8-4438-83ea-f31f09a9b619",
+        "name" : "Linear Regression (Pipeline 1)",
+        "type" : "application/vnd.sas.models.model",
+        "versionName" : "",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "a597dd16-d983-4093-940d-87ebc4af1c39",
+                "name" : "autoAuctionDec",
+                "versionId" : "6bf0186e-ace5-413c-a372-db2ad193a6ab"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    }
+]
